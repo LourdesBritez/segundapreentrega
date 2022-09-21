@@ -1,0 +1,162 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*estilos*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.headerBodyHome{
+    background-color :#000000;
+}
+
+header{
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.menu{
+    display: flex;
+    
+}
+.menu li{
+    list-style: none;
+    margin: 0.5rem;
+}
+
+.abrirMenu, .cerrarMenu{
+    display:none;
+}
+
+
+.titulo{
+    margin: 0.1em 0 1em 1em;
+    color:whitesmoke;
+    border-color: rgb(175, 6, 175);
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+header nav ul li a{
+    text-decoration: none;
+    color:#426d79 ;
+    font-size: 1.2rem;
+    
+    
+}
+nav ul li a:hover{
+ text-decoration:underline;
+ color:#66bad1;
+ transition: 1s;
+ 
+}
+/*estilo en el main*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    background: linear-gradient(grey , whitesmoke, rgb(155, 151, 151) );
+}
+
+main p, h2, .hTresNosotros{
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    
+}
+
+.imagenHome{
+    margin-bottom: 3rem;
+    box-shadow: 10px 10px 30px 15px black
+}
+.imagenNosotros, .imgNos{
+    width: 40%;
+    margin:2rem;
+    padding-top: 1rem;;
+}
+
+/* estilo en lista servicios*/
+
+.items{
+    list-style: none;
+}
+
+.items:before{
+	content:"★";
+}
+
+/* estilos en footer*/
+footer{
+   
+    background-color:black;
+    color: #315058;
+    text-align: center;
+    
+}
+
+h4{
+    font-size: 1rem;
+}
+
+.imgWhatsapp{
+    max-width: 30px;
+    max-height: 30px;
+}
+ 
+
+@media(max-width:950px) {
+    .menu{
+        flex-direction: column;
+        position:fixed;
+        left:0;
+        top:0;
+        width: 100%;
+        align-items: center;
+        background-color: black;
+        height: 100%;
+        overflow-y:auto;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    header nav ul li{
+        padding: 0;
+    }
+
+    header nav ul li a{
+        line-height : 60px;
+    }
+
+    .abrirMenu, .cerrarMenu{
+        display:block;
+        background: none;
+        border:none;
+        cursor:pointer;
+       
+    }
+
+     .cerrarMenu{
+        align-self: flex-end;
+        padding: 20px 15px;
+    }
+    .menu_opened{
+        opacity:1;
+        pointer-events: all;
+    }
+}
+
+
+
+    
+
