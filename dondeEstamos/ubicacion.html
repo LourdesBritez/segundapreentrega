@@ -4,23 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+     <!--link bt-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"> 
+    <!--link css-->
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Ubicacion</title>
 </head>
 <body>
-    <header>
-        <h1 class="titulo"> UniversalCell</h1>
-        <h2>¡ Acercate a conocernos !</h2>
-
-    </header>
+    <header class=" container-fluid ">  
+        <div class="row ">      
+            <nav class="navbar navbar-expand-lg col-12 headerBodyHome ">
+                <div class="container-fluid d-flex justify-content-start ">
+                    <a class="navbar-brand titulo" href="#">Universalcell</a>
+                    <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon boton" style="background-color: #426d79 ;"></span>
+                     </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 " >
+                            <li class="nav-item ">
+                                 <a class="nav-link active " aria-current="page" href="../index.html">
+                                 <span class="enlace">Home</span></a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="../pages/nosotros.html">
+                                <span class="enlace">Sobre Nosotros</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="../servicios/servicios.html">
+                                 <span class="enlace">Servicios</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="ubicacion.html">
+                                <span class="enlace">Donde estamos</span></a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link active " aria-current="page" href="../contacto/contacto.html">
+                                 <span class="enlace">Contacto</span></a>
+                            </li>
+                  
+                        </ul>
+                   </div>
+                </div>
+          </nav>
+        </div>
+   </header>
     <main>
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13123.179782039451!2d-58.3411037!3d-34.6851244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b6d7bb83185ca55!2sUniversal%20Cell!5e0!3m2!1ses!2sar!4v1661868226457!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
+        <div class="contenedorP">
+            <p class="parrafos">Estamos ubicados en el centro de Sarandi Avellaneda.<br>
+              Tenemos muy buenas referencias! <br>
+              Acercate a conocernos!
+            </p>
+        </div>
+        <div>    
+            <iframe class ="mapa"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13123.179782039451!2d-58.3411037!3d-34.6851244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b6d7bb83185ca55!2sUniversal%20Cell!5e0!3m2!1ses!2sar!4v1661868226457!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
 
     <footer>
-        <h2>Av mitre 3498, sarandi. Avellaneda</h2>
+        <h3>Seguinos en nuestras redes</h3>
+        <a href="https://www.facebook.com/search/top?q=universalcell%20uc" target="_blank"><img src="../img/logo-face.png" alt="Enlace facebook"></a>
+        <a href="https://www.instagram.com/universalcelluc/" target="_blank"><img src="../img/logo-insta.png" alt="Enlace instagram"></a>
+        <a href="httpss//wa.me/+541135542394" target="_blank"><img class="imgWhatsapp"src="../img/whatsapp.jpg " width="30" height"30" alt="Enlace whatsapp"></a>
+        <h4>&copy Todos los derechos reservados</h4>
     </footer>
-    
+
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>  
 </body>
 </html>

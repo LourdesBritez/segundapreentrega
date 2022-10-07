@@ -4,16 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+     <!--link bt-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"> 
+    <!--link css-->
+    <link rel="stylesheet" href="../css/styles.css">
    
     <title>Contacto</title>
 </head>
 <body>
-    <header>
-        
-        <h1 class="titulo"> UniversalCell</h1>
+    <header class=" container-fluid ">  
+        <div class="row ">      
+            <nav class="navbar navbar-expand-lg col-12 headerBodyHome ">
+                <div class="container-fluid d-flex justify-content-start ">
+                    <a class="navbar-brand titulo" href="#">Universalcell</a>
+                    <button class="navbar-toggler " type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon boton" style="background-color: #426d79 ;"></span>
+                     </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 " >
+                            <li class="nav-item ">
+                                 <a class="nav-link active " aria-current="page" href="../index.html">
+                                 <span class="enlace">Home</span></a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="../pages/nosotros.html">
+                                <span class="enlace">Sobre Nosotros</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="../servicios/servicios.html">
+                                 <span class="enlace">Servicios</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="../dondeEstamos/ubicacion.html">
+                                <span class="enlace">Donde estamos</span></a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link active " aria-current="page" href="contacto.html">
+                                 <span class="enlace">Contacto</span></a>
+                            </li>
+                  
+                        </ul>
+                   </div>
+                </div>
+          </nav>
+        </div>
     </header>
     <main>
-        <form action="">
+        <form >
             <fieldset>
                 <legend>
                     Completa tu informacion
@@ -21,18 +61,18 @@
                 <div>
                     <label for="
                     nombre"> Nombre</label>
-                    <input type="text" id="nombre" placeholder="ej: juan">
+                    <input class="datos"type="text" id="nombre" placeholder="ej: juan">
                 </div>
                 <div>
                     <label for="correo">Email</label>
-                    <input type="email" id="correo" placeholder="hola@ejemplo.com">
+                    <input class="datos" type="email" id="correo" placeholder="hola@ejemplo.com">
                 </div>
                 <div>
-                    <label for="telefono">Numero de telefono</label>
-                    <input type="number" id="telefono" placeholder="1122334455">
+                    <label for="telefono">telefono</label>
+                    <input class="datos" type="number" id="telefono" placeholder="1122334455">
                 </div>
                 <div>
-                    <label for="marca">Marca</label>
+                    <label class="datos" for="marca">Marca</label>
                     <select name="" id="marca">
                         <option value="Motorola">Motorola</option>
                         <option value="Samsung">Samsung</option>
@@ -51,8 +91,8 @@
                 <textarea name="" id="consulta" cols="30" rows="10"></textarea>
                 <br>
                 <div>
-                    <input type="submit">
-                    <input type="reset">
+                    <input type="submit" class="enviar">
+                    <input type="reset" class="restablecer">
                 </div>
             </fieldset>
         </form>
@@ -60,13 +100,14 @@
     </main>
 
     <footer>
-        <h3> Nuestro telefono : 1135542394</h3>
-        <h3> Ubicacion: av mitre 3498 Sarandi</h3>
         <h3>Seguinos en nuestras redes</h3>
-        <a href="https://www.facebook.com/search/top?q=universalcell%20uc"><img src="../img/logo-face.png" alt="Enlace facebook"></a>
-        <a href="https://www.instagram.com/universalcelluc/"><img src="../img/logo-insta.png" alt="Enlace instagram"></a>
-        <a href="httpss//wa.me/+541135542394"><img class="imgWhatsapp"src="../img/whatsapp.jpg " width="30" height"30" alt="Enlace whatsapp"></a>
+        <a href="https://www.facebook.com/search/top?q=universalcell%20uc"target="_blank"><img src="../img/logo-face.png" alt="Enlace facebook"></a>
+        <a href="https://www.instagram.com/universalcelluc/" target="_blank"><img src="../img/logo-insta.png" alt="Enlace instagram"></a>
+        <a href="httpss//wa.me/+541135542394" target="_blank"><img class="imgWhatsapp"src="../img/whatsapp.jpg " width="30" height"30" alt="Enlace whatsapp"></a>
+        
+        <h4>&copy Todos los derechos reservados</h4>
     </footer>
-    
+     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>   
 </body>
 </html>
