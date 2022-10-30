@@ -19,8 +19,8 @@ body {
     width: 80%;
     margin: 2rem; }
   main .imagenHome #img-tel {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     box-shadow: 10px 10px 30px 15px black;
     transition: 2s; } }
 
@@ -34,7 +34,8 @@ body {
   main .imagenHome #img-tel {
     width: 250px;
     height: 250px;
-    transition: 2s; }
+    transition: 2s;
+    box-shadow: 10px 10px 30px 15px black; }
   .mapa {
     width: 80%;
     margin: 2rem; }
@@ -42,6 +43,10 @@ body {
     border: 3px solid #424040;
     padding: 2rem 1.5rem;
     margin: 2rem 0; } }
+
+Main, Main .contenedorP {
+  display: flex;
+  align-items: center; }
 
 /*Estilos del header*/
 .headerBodyHome {
@@ -61,9 +66,7 @@ body {
     transition: 1s; }
 
 Main {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 1rem;
   background: linear-gradient(grey, whitesmoke, #9b9797);
   /* estilo en lista servicios*/
@@ -76,9 +79,7 @@ Main {
     font-size: 1.3rem; }
   Main .contenedorP {
     width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    justify-content: center; }
     Main .contenedorP .parrafos {
       text-align: center;
       font-size: 1.2rem; }
@@ -100,7 +101,8 @@ Main {
     content: "★"; }
   Main form {
     border: 3px solid #424040;
-    padding: 3rem 5rem; }
+    padding: 3rem 5rem;
+    margin: 1rem; }
   Main .datos {
     margin-left: 1rem;
     margin-top: 0.2em; }
@@ -124,7 +126,7 @@ Main {
 /* estilos en los footer*/
 footer {
   background-color: black;
-  color: #315058;
+  color: #426d79;
   text-align: center;
   padding-bottom: 1rem; }
   footer h4 {

@@ -7,22 +7,22 @@
      flex-direction: column;
      
    
- }
+    }
 
  
  .mapa{
      width:80%;
      margin: 2rem ;
      
- }
+    }
 
  main .imagenHome #img-tel{
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     box-shadow: 10px 10px 30px 15px black;
     transition:2s;
      
-}
+   }
 }
 
 @media (max-width:428px){
@@ -33,26 +33,24 @@
      justify-content: center;
      transition:2s;
      
- }
+    }
  
  main .imagenHome #img-tel{
      width: 250px;
      height: 250px;
      transition:2s;
-     
-     
-     
- }
+     box-shadow: 10px 10px 30px 15px black;
+    }
 
  .mapa{
      width:80%;
      margin: 2rem ;
- }
+    }
 
  form{
      border:3px solid rgb(66, 64, 64);
      padding: 2rem 1.5rem;
      margin:2rem 0;
-  }
+    }
 
 }

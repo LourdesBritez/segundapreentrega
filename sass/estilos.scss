@@ -1,10 +1,14 @@
 
-@import"utilities/reset.scss";
-@import"utilities/mq.scss";
+@import"utilities/reset";
+@import"utilities/mq";
+@import"utilities/variables";
+@import"utilities/mixin";
+@import"utilities/extend";
+
 
 /*Estilos del header*/
 .headerBodyHome{
-    background-color:black;
+    background-color:$fondoFooterHeader;
 
     .titulo{
         color:whitesmoke;
@@ -14,12 +18,11 @@
     }
         .enlace{
             text-decoration: none;
-            color:#426d79 ;
+            color:$colorFooterHeader;
             font-size: 1.2rem;
-         }
+        }
             
-        
-        .enlace:hover{
+         .enlace:hover{
          text-decoration:underline;
          color:#66bad1;
          transition: 1s;
@@ -28,9 +31,8 @@
 }
 
 Main{
-    display: flex;
+    @extend %flex;
     flex-direction: column;
-    align-items: center;
     padding:1rem;
     background: linear-gradient(grey , whitesmoke, rgb(155, 151, 151) );
 
@@ -47,9 +49,9 @@ Main{
 
     .contenedorP{
         width: 70%;
-        display:flex;
+        @extend %flex;
         justify-content: center;
-        align-items: center;
+        
 
         .parrafos{
             text-align: center;
@@ -88,24 +90,17 @@ Main{
     /*Estilos en contacto*/
 
     form{
-    border:3px solid rgb(66, 64, 64);
-    padding: 3rem 5rem;
+        border:3px solid rgb(66, 64, 64);
+        padding: 3rem 5rem;
+        margin: 1rem;
     }
 
     .datos{
-    margin-left: 1rem;
-    margin-top: 0.2em;
+        margin-left: 1rem;
+        margin-top: 0.2em;
     }
     .enviar ,.restablecer{
-        width: 40%;
-        padding: .5rem 0;
-        font-size: 18px;
-        font-weight: bold;
-        color: white;
-        background-color:#426d79 ;
-        border:none;
-        border-radius: 5px;
-        transition:1s all;
+      @include botones;
     }
     .enviar:hover{
         background:#66a6b8 ;
@@ -120,8 +115,8 @@ Main{
 
 /* estilos en los footer*/
 footer{
-    background-color:black;
-    color: #315058;
+    background-color:$fondoFooterHeader;
+    color:$colorFooterHeader;
     text-align: center;
     padding-bottom:1rem;
     
